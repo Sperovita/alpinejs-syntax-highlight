@@ -1,0 +1,98 @@
+{
+    "scopeName": "html.alpinejs.attribute",
+    "injectionSelector": ["L:text.html.derivative", "L:text.html.php", "L:text.html.twig"],
+    "patterns": [
+        {
+            "include": "#alpine-directives"
+        }
+    ],
+    "repository": {
+        "alpine-directives": {
+            "name": "meta.attribute.alpine",
+            "begin": "(?:\\b(x-)|(:|@|#))([a-zA-Z0-9\\-_]+)(?:\\:([a-zA-Z\\-_]+))?(?:\\.([a-zA-Z\\-_]+))*\\s*(=)",
+            "end": "(?<='|\")|(?=[\\s<>`])",
+            "captures": {
+                "1": {
+                    "name": "entity.other.attribute-name.html"
+                  },
+                  "2": {
+                    "name": "punctuation.separator.key-value.html"
+                  },
+                  "3": {
+                    "name": "entity.other.attribute-name.html"
+                  },
+                  "4": {
+                    "name": "entity.other.attribute-name.html"
+                  },
+                  "5": {
+                    "name": "entity.other.attribute-name.html"
+                  },
+                  "6": {
+                    "name": "punctuation.separator.key-value.html"
+                  }
+            },
+            "patterns": [
+                {
+                    "contentName": "meta.embedded.inline.alpinejs",
+                    "begin": "`",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.html"
+                        }
+                    },
+                    "end": "`",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "source.js#expression"
+                        }
+                    ]
+                },
+                {
+                    "contentName": "meta.embedded.inline.alpinejs",
+                    "begin": "\"",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.html"
+                        }
+                    },
+                    "end": "\"",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "source.js#expression"
+                        }
+                    ]
+                },
+                {
+                    "contentName": "meta.embedded.inline.alpinejs",
+                    "begin": "'",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.html"
+                        }
+                    },
+                    "end": "'",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "source.js#expression"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

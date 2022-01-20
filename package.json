@@ -1,0 +1,46 @@
+{
+  	"name": "alpinejs-syntax-highlight",
+	"displayName": "Alpine.js Syntax Highlight",
+	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
+	"author": "Greg Ransons",
+	"license": "MIT",
+	"version": "1.0.0",
+	"icon": "assets/alpine_logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Sperovita/alpinejs-syntax-highlight.git"
+	},
+	"keywords": [
+		"alpine",
+		"alpinejs",
+		"alpine.js"
+	],
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+			  "id": "inline-alpinejs"
+			}
+		],
+		"grammars": [
+			{
+				"language": "inline-alpinejs",
+				"path": "./syntaxes/injection.json",
+				"scopeName": "html.alpinejs.attribute",
+				"injectTo": [
+					"text.html.derivative", 
+					"text.html.php", 
+					"text.html.twig"
+				],
+				"embeddedLanguages": {
+					"meta.embedded.inline.alpinejs": "javascript"
+				}
+			}
+		]
+	}
+}
