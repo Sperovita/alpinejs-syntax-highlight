@@ -6,6 +6,7 @@
 	"license": "MIT",
 	"version": "1.0.0",
 	"icon": "assets/alpine_logo.png",
+	"publisher": "sperovita",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Sperovita/alpinejs-syntax-highlight.git"
