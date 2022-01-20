@@ -4,7 +4,7 @@
 	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
 	"author": "Greg Ransons",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "assets/alpine_logo.png",
 	"publisher": "sperovita",
 	"repository": {
