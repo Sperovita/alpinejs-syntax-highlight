@@ -9,7 +9,7 @@
     "repository": {
         "alpine-directives": {
             "name": "meta.attribute.alpine",
-            "begin": "(?:\\b(x-)|(:|@|#))([a-zA-Z0-9\\-_]+)(?:\\:([a-zA-Z\\-_]+))?(?:\\.([a-zA-Z\\-_]+))*\\s*(=)",
+            "begin": "(?:\\b(x-)|(:|@|#))([a-zA-Z0-9\\-_]+)(?:\\:([a-zA-Z\\-_]+))?(?:\\.([a-zA-Z0-9\\-_]+))*\\s*(=)",
             "end": "(?<='|\")|(?=[\\s<>`])",
             "captures": {
                 "1": {
