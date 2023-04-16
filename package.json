@@ -36,7 +36,8 @@
 				"injectTo": [
 					"text.html.derivative", 
 					"text.html.php", 
-					"text.html.twig"
+					"text.html.twig",
+					"text.html.jinja"
 				],
 				"embeddedLanguages": {
 					"meta.embedded.inline.alpinejs": "javascript"
