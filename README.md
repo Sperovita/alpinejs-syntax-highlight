@@ -7,6 +7,7 @@ Javascript syntax highlighting for x- attribute values in html for [Alpine JS](h
 html
 php
 twig
+liquid
 
 ## Credit
 
