@@ -34,7 +34,7 @@
 				"path": "./syntaxes/injection.json",
 				"scopeName": "html.alpinejs.attribute",
 				"injectTo": [
-					"text.html.derivative", 
+					"text.html", 
 					"text.html.php", 
 					"text.html.twig"
 				],
